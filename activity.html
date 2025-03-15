@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="activity.css">
+    <title>Activity</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Canencia <span>Jayrald</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="#">About Me</a></div>
+                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="activity.html">Activity</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="activities-section">
+        <h1 data-aos="fade-down" data-aos-duration="1500">My <span>Activities</span></h1>
+        <div class="activities-container">
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <a href="https://ibb.co/Q7Mgynp3"><img src="https://i.ibb.co/9mWDQ2ck/activity1.jpg" alt="activity1" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>picture uploader</a><br />
+                
+                <h3>Activity 1</h3>
+                <p>#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int secretNumber, guess;
+
+    srand(time(0)); // initialize random numbers and the mumbers change every run 
+    secretNumber = rand() % 100 + 1; // generate random numbers between 1 and 100 
+
+    printf("Guess the number (1-100): ");
+
+    while (1) { //Create infinite loop //
+        scanf("%d", &guess);
+
+        if (guess > secretNumber) {
+            printf("Too high! Try again: ");
+        } else if (guess < secretNumber) {
+            printf("Too low! Try again: ");
+        } else {
+            printf("Congratulations! You guessed the number.\n");
+            break; // The loop will stop if you guess the correct number 
+        }
+    }
+
+    return 0;
+    
+    }</p>
+            </div>
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <a href="https://ibb.co/QjJXNXcQ"><img src="https://i.ibb.co/XkWVsV4L/1742016180528.jpg" alt="1742016180528" border="0"></a>
+                <h3>Activity 2</h3>
+                <p>#include <stdio.h>
+
+int main() {
+    char student[30]; // Store the student's name
+    int quiz, assignment, exam;
+    float average;
+    int grade;
+
+    printf("Name of the student: ");
+    scanf("%s", student);
+
+    printf("Enter quiz score: ");
+    scanf("%d", &quiz);
+
+    printf("Enter assignment score: ");
+    scanf("%d", &assignment);
+
+    printf("Enter exam score: ");
+    scanf("%d", &exam);
+
+    // Compute the average score
+    average = (quiz + assignment + exam) / 3.0;
+
+    // Determine the grade
+    if (average >= 90 && average <= 100) {
+        grade = 'A';
+    } else if (average >= 80) {
+        grade = 'B';
+    } else if (average >= 70) {
+        grade = 'C';
+    } else if (average >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+    // Display the result
+    printf("\nStudent Name: %s\n", student);
+    printf("Average Score: %.2f\n", average);
+    printf("Grade: %c\n", grade);
+
+    return 0;
+}</p>
+            </div>
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <a href="https://ibb.co/Z1Hft4TT"><img src="https://i.ibb.co/bRH6qwdd/1742016103950.jpg" alt="1742016103950" border="0"></a>
+                <h3>Activity 3</h3>
+                <p>#include <iostream>
+
+using namespace std;
+
+int main() {
+    int choices, pin, enteredPin;
+    float balance, amount;
+
+    // Account Pin
+    pin = 1234;
+    
+    cout << "Enter your ATM PIN: ";
+    cin >> enteredPin;
+
+    if (enteredPin != pin) {
+        cout << "Incorrect PIN.\n";
+        return 0;
+    }
+    
+    cout << "Login successful!\n";
+
+    while (1) {
+        // Display menu
+        cout << "\nATM MENU\n";
+        cout << "1. Deposit Money\n";
+        cout << "2. Withdraw Money\n";
+        cout << "3. Check Balance\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choices;
+
+        switch (choices) {
+            case 1:
+                cout << "Enter amount to deposit: ";
+                cin >> amount;
+                if (amount > 0) {
+                    balance += amount;
+                    cout << "Deposit successful!\n";
+                }
+                break;
+
+            case 2:
+                cout << "Enter amount to withdraw: ";
+                cin >> amount;
+                if (amount > 0 && amount <= balance) {
+                    balance -= amount;
+                    cout << "Withdrawal successful!\n";
+                } else {
+                    cout << "Invalid or insufficient funds.\n";
+                }
+                break;
+
+            case 3:
+                cout << "Your balance is: " << balance << endl;
+                break;
+
+            case 4:
+                cout << "Logging out successfully. Thank you for using the ATM!\n";
+                return 0;
+
+            default:
+                cout << "Invalid choice. Please try again.\n";
+        }
+    }
+
+    return 0;
+}</p>
+            </div>
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <a href="https://ibb.co/JwvQs6cw"><img src="https://i.ibb.co/DH9pRc1H/activity4.jpg" alt="activity4" border="0"></a>
+                <h3>Activity 4</h3>
+                <p>#include <iostream> 
+#include <conio.h> 
+#include <unistd.h> 
+using namespace std;
+
+bool gameOver; 
+const int width = 20, height = 17; 
+int x, y, fruitX, fruitY, score; 
+enum Direction { STOP = 0, LEFT, RIGHT, UP, DOWN }; 
+Direction dir;
+
+void Setup() { 
+gameOver = false; 
+dir = STOP; 
+x = width / 2; 
+y = height / 2; 
+fruitX = rand() % width; 
+fruitY = rand() % height; score = 0; }
+
+void Draw() { 
+system("clear"); 
+for (int i = 0; i < width + 2; i++) cout << "#"; cout << endl; 
+for (int i = 0; i < height; i++) { 
+for (int j = 0; j < width; j++) { 
+if (j == 0) cout << "#"; 
+if (i == y && j == x) cout << "O"; 
+else if (i == fruitY && j == fruitX) cout << "F"; 
+else cout << " "; 
+if (j == width - 1) cout << "#"; } cout << endl; } 
+for (int i = 0; i < width + 2; i++) cout << "#"; cout << "\nScore: " << score << endl; }
+
+void Input() { 
+if (_kbhit()) { 
+switch (_getch()) { 
+case 'a': dir = LEFT; 
+break; 
+case 'd': dir = RIGHT; 
+break; 
+case 'w': dir = UP; 
+break;
+case 's': dir = DOWN; 
+break; 
+case 'x': gameOver = true; 
+break; 
+} 
+} 
+}
+
+void Logic() { 
+switch (dir) { 
+case LEFT: x--; 
+break; 
+case RIGHT: x++; 
+break; 
+case UP: y--; 
+break; 
+case DOWN: y++; 
+break; 
+} 
+
+if (x == fruitX && y == fruitY) { 
+score += 10; 
+fruitX = rand() % width; 
+fruitY = rand() % height; 
+} 
+}
+
+int main() { 
+Setup(); 
+while (!gameOver) { 
+Draw(); 
+Input(); 
+Logic(); 
+usleep(100000); 
+} 
+return 0;
+ }</p>
+            </div>
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/prQYzRLN/1742016276884.jpg" alt="1742016276884" border="0"></a>
+                <h3>Activity Title 5</h3>
+                <p>#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 4, 5, 4, 6, 7, 4, 5, 4};  
+    int freq[10] = {0};
+
+    for (int num : arr) {
+        freq[num]++;
+    }
+    
+    freq[4] = 4;
+
+    cout << "The frequency is: " << freq[4] << endl;
+
+    return 0;
+}</p>
+            </div>
+            <div class="activity" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+              <a href="https://ibb.co/nqp1w6tQ"><img src="https://i.ibb.co/bjtv6QDN/activity6.jpg" alt="activity6" border="0"></a>
+                <h3>Activity 6</h3>
+                <p>#include <iostream>
+using namespace std;
+
+int main() {
+    int scores[] = {100, 50, 20, 70}; 
+    int size = 4; 
+    int rankNumber = 1;
+
+    cout << "Enter " << size << " scores:\n";
+    for (int index = 0; index < size; index++) {
+        cin >> scores[index];
+    }
+
+    
+    for (int playerIndex1 = 0; playerIndex1 < size - 1; playerIndex1++) {
+        for (int playerIndex2 = playerIndex1 + 1; playerIndex2 < size; playerIndex2++) {
+            if (scores[playerIndex1] < scores[playerIndex2]) { 
+                int temp = scores[playerIndex1];
+                scores[playerIndex1] = scores[playerIndex2];
+                scores[playerIndex2] = temp;
+            }
+        }
+    }
+
+    
+    cout << "\n~Leaderboard~\n";
+    cout << "Rank " << rankNumber << ": " << scores[0] << endl;
+
+    for (int playerIndex = 1; playerIndex < size; playerIndex++) {
+        if (scores[playerIndex] != scores[playerIndex - 1]) { // iremove ang duplicate number
+            rankNumber++;
+            cout << "Rank " << rankNumber << ": " << scores[playerIndex] << endl;
+        }
+    }
+
+    return 0;
+}</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+</body>
+  </html>
