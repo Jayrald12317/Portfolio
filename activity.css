@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #ff6347;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    margin: 0 15px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.link a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Activities Section */
+.activities-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+h1 span {
+    color: #ff6347;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activity {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.activity h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.activity p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Source Code Styling */
+pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+}
+
+/* Hover Effect */
+.activity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        width: 90%;
+    }
+}
